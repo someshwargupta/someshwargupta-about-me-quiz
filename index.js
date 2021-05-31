@@ -17,9 +17,10 @@ questions=
 var score=0;
 function play(question,answer){
   var ans=readLineSync.question(question)
-  score++;
+  
   if(ans===answer){
     console.log("You are correct");
+    score++;
   }
   else{
     console.log("You are wrong ");
